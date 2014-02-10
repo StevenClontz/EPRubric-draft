@@ -1,0 +1,49 @@
+﻿@model EPRubric.Models.Portfolio
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.AUUserID)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.AUUserID)
+    @Html.ValidationMessageFor(model => model.AUUserID)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.CommunicationSlo)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.CommunicationSlo)
+    @Html.ValidationMessageFor(model => model.CommunicationSlo)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.CriticalSlo)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.CriticalSlo)
+    @Html.ValidationMessageFor(model => model.CriticalSlo)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.TechnicalSlo)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.TechnicalSlo)
+    @Html.ValidationMessageFor(model => model.TechnicalSlo)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.VisualSlo)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.VisualSlo)
+    @Html.ValidationMessageFor(model => model.VisualSlo)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Comments)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Comments)
+    @Html.ValidationMessageFor(model => model.Comments)
+</div>

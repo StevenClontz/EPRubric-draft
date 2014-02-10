@@ -183,11 +183,13 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PortfoliosController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Portfolio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -301,6 +303,14 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Portfolios\Index.cshtml" />
+    <Content Include="Views\Portfolios\Details.cshtml" />
+    <Content Include="Views\Portfolios\Create.cshtml" />
+    <Content Include="Views\Portfolios\Edit.cshtml" />
+    <Content Include="Views\Portfolios\Delete.cshtml" />
+    <Content Include="Views\Portfolios\_List.cshtml" />
+    <Content Include="Views\Portfolios\_Display.cshtml" />
+    <Content Include="Views\Portfolios\_FormFields.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

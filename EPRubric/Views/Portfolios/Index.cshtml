@@ -1,0 +1,11 @@
+﻿@model IEnumerable<EPRubric.Models.Portfolio>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create", new { }, new { @class = "btn btn-success btn-sm" })
+</p>
+
+@Html.Partial("_List")

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<EPRubric.Models.Portfolio>
+
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AUUserID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CommunicationSlo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CriticalSlo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TechnicalSlo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VisualSlo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comments)
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AUUserID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CommunicationSlo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CriticalSlo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TechnicalSlo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VisualSlo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Comments)
+                </td>
+                <td>
+                    <div style="min-width:85px">
+                        <a href="@Url.Action("Edit", new { id=item.ID })" class="btn btn-warning btn-xs"><i class="icon icon-edit"></i></a>
+                        <a href="@Url.Action("Details", new { id=item.ID })" class="btn btn-primary btn-xs"><i class="icon icon-eye-open"></i></a>
+                        <a href="@Url.Action("Delete", new { id=item.ID })" class="btn btn-danger btn-xs"><i class="icon icon-remove"></i></a>
+                    </div>
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
